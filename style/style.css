@@ -1,3 +1,7 @@
+* {
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+}
 body {
     margin: 0;
     top: 0;
@@ -12,7 +16,7 @@ body {
     right: 20%;
     left: 20%;
     background-color: white;
-
+    height: max-content;
 }
 p {
     text-align: center;
@@ -27,7 +31,7 @@ p {
     background-color:darkred;
     color: white;
 }
-.gambar-segitiga {
+.gambar-luas-segitiga {
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
@@ -46,10 +50,71 @@ p {
 }
 .hitung-luas-segitiga {
     text-align: center;
+    font-size: 25px;
 }
 input {
     width: 70%;
 }
 .perhitungan-luas {
     margin: 2%;
+    height: 25vh;
+}
+.tombol-hitung-luas {
+    position: absolute;
+    right: 10px;
+    width: 70px;
+    height: 4vh;
+}
+.tombol-reset-luas {
+    position: absolute;
+    right: 10px;
+    margin-top: 20px;
+    width: 70px;
+    height: 4vh;
+}
+.keliling-segitiga {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 900;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 3%;
+    background-color:darkred;
+    color: white;
+}
+.gambar-keliling-segitiga {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+.hitung-keliling-segitiga {
+    text-align: center;
+    font-size: 25px;
+}
+.rumus-keliling-segitiga {
+    text-align: center;
+}
+.perhitungan-keliling {
+    margin-left: 2%;
+}
+#result-luas {
+    border: none;
+    margin-top: 20px;
+}
+#result-keliling {
+    margin-top: 20px;
+    border: none;
+}
+.tombol-hitung-keliling {
+    position: absolute;
+    right: 10px;
+    width: 70px;
+    height: 4vh;
+}
+.tombol-reset-keliling {
+    position: absolute;
+    right: 10px;
+    margin-top: 20px;
+    width: 70px;
+    height: 4vh;
 }

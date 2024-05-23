@@ -5,6 +5,7 @@
             Kalkulator Segitiga
         </title>
         <link rel="stylesheet" href="style/style.css">
+        <script src="script/script.js"></script>
     </head>
     <body>
         <div class="container">
@@ -13,8 +14,8 @@
         <p>sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling segitiga</p>
         <div>
             <div class="luas-segitiga">Luas Segitiga</div>
-            <div class="body-kalkulator">
-                <img src="https://image.popmama.com/content-images/post/20220402/luas-segitigajpg-633b935cf441f58f97774d92a52b9946.jpg?width=600&height=auto" alt="luas segitiga" class="gambar-segitiga">
+            <div class="kalkulator-luas">
+                <img src="https://image.popmama.com/content-images/post/20220402/luas-segitigajpg-633b935cf441f58f97774d92a52b9946.jpg?width=600&height=auto" alt="luas segitiga" class="gambar-luas-segitiga">
             <br> 
             <div class="teks-rumus-luas-segitiga">Rumus luas segitiga yaitu :</div>
             <br>
@@ -30,15 +31,50 @@
                 <h1 class="hitung-luas-segitiga">Hitung Luas Segitiga</h1>
                 <div class="perhitungan-luas">
                     <br>Alas
-                    <br><input type="number">
+                    <br><input type="number" id="alas">
                     <br>
                     <br>Tinggi
-                    <br><input type="number">
-                    <br><button>Hitung</button>
-                    <br><button>Reset</button>
+                    <br><input type="number" id="tinggi">
+                    <br><input type="number" readonly id="result-luas">
+                    <br><button class="tombol-hitung-luas" onclick="hitungLuas()">Hitung</button>
+                    <br><button class="tombol-reset-luas" onclick="clearLuas()">Reset</button>
                 </div>
             </div>
+            <br>
+            <br>
         </div>
+            <div class="keliling-segitiga">Keliling Segitiga</div>
+            <div class="kalkulator-keliling">
+                <img src="https://lh7-us.googleusercontent.com/nRTsdWYhniocKjeETaKgTGb-hmzStngBg4t1MUYsFKDk_VwzNOZTTZ3ARMQG_imIEpNRDKxN-5H74pZ_gQzvInzlWdSLJx-XBitRLdyzteN8xjWUcFS6GY1vxCSdk_GvwMoRbvaY4r-X" alt="Rumus Keliling Segitiga" class="gambar-keliling-segitiga">
+            </div>
+            <br>
+            <div style="margin-left: 2%;"> Rumus keliling segitiga yaitu : </div>
+            <br>
+            <br>
+            <div class="rumus-keliling-segitiga">K = a + b + c</div>
+            <br>
+            <div class="teks-dimana">
+            Dimana : <br>
+            K = Keliling segitiga <br>
+            a = Sisi segitiga <br>
+            b = Sisi segitiga <br>
+            c = Sisi segitiga <br>
+            </div>
+            <hr>
+            <h1 class="hitung-keliling-segitiga">Hitung Keliling Segitiga</h1>
+            <div class="perhitungan-keliling">
+                <br>Sisi a
+                <br><input type="number" id="a">
+                <br>
+                <br>Sisi b
+                <br><input type="number" id="b">
+                <br>
+                <br>Sisi c
+                <br><input type="number" id="c">
+                <br><input type="number" id="result-keliling" readonly>
+                <br><button class="tombol-hitung-keliling" onclick="hitungKeliling()">Hitung</button>
+                <br><button class="tombol-reset-keliling" onclick="clearKeliling()">Reset</button>
+            </div>
         </div>
     </body>
 </html>
