@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    top: 0;
+    background-color: whitesmoke;
+}
+.judul {
+    text-align: center;
+}
+.container {
+    width: 60%;
+    position: absolute;
+    right: 20%;
+    left: 20%;
+    background-color: white;
+
+}
+p {
+    text-align: center;
+}
+.luas-segitiga {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 900;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 3%;
+    background-color:darkred;
+    color: white;
+}
+.gambar-segitiga {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+.rumus-segitiga {
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+.teks-rumus-luas-segitiga {
+    margin-left: 2%;
+}
+.teks-dimana {
+    margin-left: 2%;
+}
+.hitung-luas-segitiga {
+    text-align: center;
+}
+input {
+    width: 70%;
+}
+.perhitungan-luas {
+    margin: 2%;
+}
